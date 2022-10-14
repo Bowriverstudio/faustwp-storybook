@@ -1,6 +1,6 @@
-import classNames from 'classnames/bind';
-import * as SELECTORS from '../../constants/selectors';
-import styles from './Main.module.scss';
+import classNames from "classnames/bind";
+import * as SELECTORS from "../../constants/selectors";
+import styles from "./Main.module.scss";
 
 let cx = classNames.bind(styles);
 
@@ -9,9 +9,10 @@ export default function Main({ children, className, ...props }) {
     <main
       id={SELECTORS.MAIN_CONTENT_ID}
       tabIndex={-1}
-      className={cx(['component', className])}
+      className={cx(["component", className])}
       {...props}
     >
+      <h2 className="text-blue-500">Testing</h2>
       {children}
     </main>
   );
